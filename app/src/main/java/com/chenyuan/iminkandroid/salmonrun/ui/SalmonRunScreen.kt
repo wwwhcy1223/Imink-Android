@@ -5,5 +5,5 @@ import androidx.compose.runtime.Composable
 
 @Composable()
 fun SalmonRunScreen() {
-   Text(text = "this is salmon run")
+    Text(text = "this is salmon run")
 }
