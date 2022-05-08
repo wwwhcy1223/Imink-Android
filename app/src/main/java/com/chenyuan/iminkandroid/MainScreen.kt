@@ -2,7 +2,11 @@ package com.chenyuan.iminkandroid.home.ui
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material.BottomNavigation
+import androidx.compose.material.BottomNavigationItem
+import androidx.compose.material.Icon
 import androidx.compose.material.Scaffold
+import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Email
 import androidx.compose.material.icons.filled.Face
@@ -21,8 +25,7 @@ fun MainScreen() {
         bottomBar = {
             MainBottomScreen(
                 modifier = Modifier.fillMaxWidth(),
-                onNavigationSelected = {
-                        screen ->
+                onNavigationSelected = { screen ->
                     navController.navigate(screen.route) {
                     }
                 }
